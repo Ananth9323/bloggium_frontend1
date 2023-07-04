@@ -31,7 +31,7 @@ export default function Settings() {
       data.append("file", file);
       updatedUser.profilePic = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post("https://bloggium.onrender.com/upload", data);
       } catch (err) {}
     }
     try {
